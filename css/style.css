@@ -91,7 +91,7 @@ h6 {
 
 .container {
     max-width: 1140em;
-    padding: 60px;
+    padding: 60px 0;
 }
 .main {
 	font-size: 50px;
@@ -141,15 +141,15 @@ h6 {
 .skill {
 	text-align: center;
 	margin-left: 10px;
-	padding: 30px;
+	padding: 0px;
 }
 
 /*--------------CHARTS--------------------------*/
 
 .chart {
 	position: relative;
-	width: 152px;
-	height: 152px;
+	width: 145px;
+	height: 145px;
 	display: inline-block;
 	text-align: center;
 }
@@ -171,34 +171,15 @@ h6 {
 	content: '%';
 }
 
-.htmlSkillsH4 { 
-	padding: 20px;
-	font-size: 40px;
-}
-
-.cssSkillsH4 {
-	padding: 20px;
-	font-size: 40px;
-}
-
-.javascriptSkillsH4 {
-	padding: 20px;
-	font-size: 40px;
-}
-
-.csSkillsH4 {
-	padding: 20px;
-	font-size: 40px;
-}
-
-.cppSkillsH4 {
-	padding: 20px;
-	font-size: 40px;
-}
-
-.pythonSkillsH4 {
-	padding: 20px;
-	font-size: 40px;
+.htmlSkillsH4, 
+.cssSkillsH4,
+.javascriptSkillsH4,
+.csSkillsH4,
+.cppSkillsH4,
+.pythonSkillsH4
+{ 
+	padding-top: 30px;
+	font-size: 25px;
 }
 
 /*----------------CONTACT-------------------*/
