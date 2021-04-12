@@ -1,5 +1,5 @@
 body {
-  font-size: 14px;
+  font-size: 10px;
   color: #333;
   background-color: #fff;
   letter-spacing: 1px;
@@ -28,25 +28,20 @@ h6 {
   border-bottom: 1px solid #fff;
   border-radius: 2px;
 }
-
 #navigation li {
   padding: 0 10px;
 }
-
 #navigation li a {
   color: #fff;
 }
-
 .navbar-brand,
 .navbar-brand:hover {
   color: #fff;
 }
-
 .navbar-toggler-icon {
   background: url("../img/icons/navBar.png");
   background-size: 100%;
 }
-
 .fixedNav #navigation {
   position: fixed;
   top: 0;
@@ -54,32 +49,32 @@ h6 {
 
 /*-------------------SUPER SLIDES---------------------*/
 
-/*.overlay{
+/* .overlay{
 	width: 100%;
 	height:100%;
 	position: absolute;
 	z-index: 3;  Makes the layer 2nd level higher the level will show on top
 	background-color: rgba(0, 0, 0, 0.4);
-}*/
-/*.slides-navigation {
+}
+.slides-navigation {
 	z-index: 6;
-}*/
-/*.slides-navigation .prev,
+}
+.slides-navigation .prev,
 .slides-navigation .next {
 	width: 50px;
 	height: 50px;
 	background-size: cover;
 	background-repeat: no-repeat;
-}*/
-/*.slides-navigation a.prev {
+}
+.slides-navigation a.prev {
 	left: 20px;
 	background-image: url(../img/icons/prev.png);
-}*/
-/*.slides-navigation a.next {
+}
+.slides-navigation a.next {
 	right: 20px;
 	background-image: url(../img/icons/next.png);
-}*/
-/*.titleMessage {
+}
+.titleMessage {
 	position: absolute;
     width: 100%;
     height: 250px;
@@ -87,130 +82,85 @@ h6 {
     z-index: 5;
     text-align: center;
     margin-top: -125px;
-}*/
-/*.heading {
+}
+.heading {
 	color: white;
     text-shadow: 8px 2px 5px rgb(0,0,0,0.4);
     font-weight: 100;
     letter-spacing: 7px;
-}*/
+} */
 
 /*-------------------ABOUT---------------------*/
-
-.containerAboutMain {
-  max-width: 1140em;
-  height: 54.5rem;
-  padding: 336px 0;
-  background-color: #ffffff;
+section {
+  background: white;
+  color: grey;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  height: 45rem;
 }
 
-.col-md-4 {
-  position: absolute;
-  width: 28.125rem;
-  top: 4.9rem;
-  transform-origin: 50% 50% 0px;
-  height: 54.5rem;
-  left: 0;
-  background-image: none;
-  background-color: #3b3dacfd;
+.imgMain {
+  margin: auto;
+  width: 30rem;
+  height: 30rem;
 }
 
-.col-md-8 {
-  position: absolute;
-  padding: 25px;
-  padding-left: 2%;
-  width: 1300px;
-  top: 4.9rem;
-  transform-origin: 50% 50% 0px;
-  height: 54.5rem;
-  left: 450px;
-  background-image: none;
-  background-color: transparent;
-  text-align: center;
-}
-
-.myName {
-  padding-top: 5px;
-  text-align: center;
-  color: #ffffff;
-}
-.intro {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 50px;
-  /* background-color: #ccc; */
-}
-
-.education {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 50px;
-  /* background-color: #ccc; */
-}
-
-.main {
-  font-size: 50px;
-}
-
-.sub {
-  font-size: 27px;
-}
-
-.about {
-  padding: 50px;
-}
-.aboutImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.imgMain-Grad {
+  width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
-.aboutIntro {
-  color: white;
-  text-align: center;
-  padding: 5px;
+.nameIntro {
+  margin: auto;
+  width: 40rem;
+  height: 30rem;
 }
 
-.resumeButtonDiv {
-  text-align: center;
+.nameIntro-H {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
 }
 
-.resumeButton {
-  color: #ffffff;
-  padding: 20px 25px;
-  display: inline-block;
-  margin-top: 20px;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-}
-
-.resumeButton:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #2c3e50;
+.nameIntro-P {
+  font-size: 2rem;
 }
 
 /*--------------SKILLS--------------------------*/
 
 .skillsContainer {
-  top: -100px;
+  top: -10rem;
 }
 
 .skillsSection {
-  background-color: #180c7cfd;
-  color: #fff;
+  background-image: url("../img/squigglesBackground.png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
 }
 
 .col-md-12 {
-  padding: 85px;
+  padding: 8.5rem;
 }
 
 .skill {
+  width: 22vw;
+  height: 30vw;
+  background-color: rgba(0, 0, 0, 0.657);
   text-align: center;
-  margin-left: 10px;
-  padding: 0px;
+  margin-left: 1rem;
+}
+
+.skill h4 {
+  position: relative;
+  color: #ffffff;
+  top: 2vw;
+}
+
+.skill p {
+  position: relative;
+  color: #ffffff;
+  top: 2vw;
 }
 
 /*--------------CHARTS--------------------------*/
@@ -225,15 +175,17 @@ h6 {
 
 .chart canvas {
   position: absolute;
+  top: 2vw;
   left: 0;
 }
 
 .chart .percent {
-  color: #fff;
+  color: #ffffff;
   line-height: 152px;
   display: inline-block;
   font-size: 30px;
-  top: 0;
+  position: relative;
+  top: 2vw;
 }
 
 .chart .percent:after {
