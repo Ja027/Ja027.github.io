@@ -166,7 +166,30 @@
 
 <!------------------------------PROJECTS----------------------------------------------->
 
-	
+    <div class="project-tabs">
+        <button class="tablinks" onclick="openProj(event, 'JavaScript')" onload="load()">JavaScript</button>
+        <button class="tablinks" onclick="openProj(event, 'React')">React</button>
+        <button class="tablinks" onclick="openProj(event, 'Learning')">Learning</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="JavaScript" class="tabcontent">
+        <h1>Update coming soon!1</h1>
+    </div>
+  
+    <div id="React" class="tabcontent">
+        <h1>Update coming soon!2</h1>
+    </div>
+  
+    <div id="Learning" class="tabcontent">
+        <div class="project-container">
+            <div class="a">a</div>
+            <div class="b">b</div>
+            <div class="c">c</div>
+        </div>
+       
+    </div>
+
 
 <!------------------------------CONTACT---------------------------------------->
 
@@ -226,6 +249,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script src="js/script.js"></script>
-
+    <script src="js/project_tabs.js"></script>
+    <script>
+        window.onload = function load() {
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tabcontent[0].style.display = "block";
+        }
+    </script>
 </body>
 </html>
